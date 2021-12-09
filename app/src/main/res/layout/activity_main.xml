@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/rlMain_Ac"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/Cari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00F4E803"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/Judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Prakiraan Cuaca By IVARNU"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_below="@id/Judul"
+            android:id="@+id/edt_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan kota yang ingin ditampilkan" />
+
+        <Button
+            android:id="@+id/btnLoading"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_input"
+            android:layout_centerHorizontal="true"
+            android:onClick="loading"
+            android:text="Atur" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Cari"
+        android:background="#FFC107"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txtCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Kota"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCity"
+            android:fontFamily="sans-serif"
+            android:text="Data diambil pada"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="158dp"
+            android:layout_height="113dp"
+            android:layout_below="@id/txtTime"
+            android:src="@drawable/phc" />
+
+        <TextView
+            android:id="@+id/txtValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imgIcon"
+            android:layout_alignParentRight="true"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="3°"
+            android:textColor="#ffffff"
+            android:textSize="90dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSub"
+        android:layout_below="@id/rlMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="16dp"
+        >
+
+        <ImageView
+            android:id="@+id/imgFeelLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/temp"
+            />
+
+        <TextView
+            android:id="@+id/txtTitleFeelLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgFeelLike"
+            android:text="Terasa Seperti"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txtValueFeelLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgFeelLike"
+            android:layout_below="@id/txtTitleFeelLike"
+            android:layout_marginLeft="10dp"
+            android:text="7°"
+            android:textSize="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/imgHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/humidity"
+            android:layout_below="@id/imgFeelLike"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:id="@+id/txtTitleHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/imgHumidity"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgHumidity"
+            android:text="Tingkat Kelembapan"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/txtValueHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgHumidity"
+            android:layout_below="@id/txtTitleHumidity"
+            android:layout_marginLeft="10dp"
+            android:text="7°"
+            android:textSize="20dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

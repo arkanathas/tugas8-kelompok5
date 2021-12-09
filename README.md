@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="110" height="auto" src="./images/logo.png" alt>                        
+  <img width="110" height="auto" src="./app/src/main/res/drawable/logo.png" alt>                        
 </p>
  <h1>Kelompok 5</h1>
  <ol>

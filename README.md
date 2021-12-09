@@ -10,4 +10,4 @@
 <h1>API yang digunakan</h1>
 <p>OpenWeatherApp <a href="https://openweathermap.org/" target="_blank">klik disini</a></p>
 <h1>Hasil</h1>
-<img width="auto" height="auto" src="./Hasil.jpg" alt>   
+<img width="auto" height="auto" src="./hasil.jpg" alt>   

@@ -25,20 +25,25 @@
             android:textSize="20sp" />
 
         <EditText
-            android:layout_below="@id/Judul"
             android:id="@+id/edt_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Masukkan kota yang ingin ditampilkan" />
+            android:layout_below="@id/Judul"
+            android:hint="Masukkan kota yang ingin ditampilkan"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnLoading"
+            style="@style/Widget.AppCompat.Button"
             android:layout_width="256dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/edt_input"
             android:layout_centerHorizontal="true"
+            android:background="#FFC107"
             android:onClick="loading"
-            android:text="Atur" />
+            android:text="Atur"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <RelativeLayout
